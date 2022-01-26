@@ -1,0 +1,83 @@
+* {
+    font-family: 'Poppins', serif;
+    color: #fff;
+    font-size: 62.5%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    background-color: #44607e;
+}
+
+header {
+    background-color: crimson;
+    height: 14rem;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: crimson;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+button {
+    cursor: pointer;
+    margin: 0.5rem;
+    border-radius: 10rem;
+    border: none;
+    background-color: rgb(228, 44, 81);
+    border: 0.3rem solid rgb(212, 43, 80);
+    font-size: 2.5rem;
+    box-shadow: 2px 2px 5px rgb(139, 19, 59);
+}
+
+button:active {
+    background-color: #f1407b;
+}
+
+button:focus {
+    outline: none;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    margin: 10px 10px 20px;
+    background-color: #363636;
+    border-radius: 32px;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+
+#valor-actual {
+    font-size: 4rem;
+}
+
+#valor-anterior {
+    font-size: 3rem;
+}
